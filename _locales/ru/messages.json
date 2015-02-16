@@ -1,0 +1,17 @@
+{
+	"save": {
+		"message": "Save settings"
+	},
+	"hotkey": {
+		"message": "Keyboard shortcut"
+	},
+	"title": {
+		"message": "Zen Image Save"
+	},
+	"options": {
+		"message": "Options"
+	},
+	"saved": {
+		"message": "Saved!"
+	}
+}

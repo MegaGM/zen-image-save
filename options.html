@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title data-i18n="title">Zen image save options</title>
+	<link rel="icon" href="images/16.png">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/options.css">
+</head>
+<body>
+	<div style="margin: 30px auto; max-width: 220px; text-align: center;">
+		<img src="images/128.png" style="margin: 0px auto; width: 128px; height: 128px;">
+		<h1 data-i18n="title"></h1>
+
+		<span class="input input--minoru">
+		<input class="input__field input__field--minoru" type="text" id="hotkey" data-ctrl="false" data-alt="false" data-shift="false" data-key="false" />
+		<label class="input__label input__label--minoru" for="hotkey">
+			<span class="input__label-content input__label-content--minoru" data-i18n="hotkey">Last Name</span>
+		</label>
+		</span>
+
+		<button class="btn" id="save" data-i18n="save"></button>
+		<p id="saved" data-i18n="saved" style="color: #080; display: none;"></p>
+
+	</div>
+	<script src="js/lib/jquery-2.1.3.min.js"></script>
+	<script src="js/i18n.js"></script>
+	<script src="js/lib/classie.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>
