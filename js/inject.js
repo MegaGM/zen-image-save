@@ -22,7 +22,6 @@ chrome.storage.sync.get({
 	ZenImageSave.alt = items.alt;
 	ZenImageSave.shift = items.shift;
 	ZenImageSave.key = items.key;
-	console.log( 'CLIENT SCRIPT chrome.storage.sync.get', items );
 });
 
 
@@ -38,7 +37,6 @@ $(window).on('keydown', function ( e ) {
 	if ( ZenImageSave.shift !== e.shiftKey ) return;
 	if ( ZenImageSave.key !== e.which ) return;
 
-	console.log( 'HERE IT IS', e );
 	var url;
 
 	/**
@@ -81,7 +79,6 @@ $(window).on('keydown', function ( e ) {
  * Send a message to backend 'bg.js'
  */
 function doSave ( url ) {
-	console.log( 'doSave was called' );
 	if ( !url ) return;
 
 
@@ -99,7 +96,7 @@ function doSave ( url ) {
 
 
 	/**
-	 * Send command to download it to bg.js
+	 * Send command for downloading to bg.js
 	 */
 	chrome.runtime.sendMessage({key: 'download', url: url});
 };
