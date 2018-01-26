@@ -1,7 +1,7 @@
 {
 	"name": "Zen Image Save",
 	"description": "Save images without fu*****",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"manifest_version": 2,
 	"content_scripts": [{
 		"all_frames": true,
