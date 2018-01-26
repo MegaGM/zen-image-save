@@ -22,4 +22,4 @@ chrome.runtime.onMessage.addListener(function (req, sender, res) {
   });
 });
 
-chrome.storage.sync.set({ first: 'meow', second: 'wamuw' });
+// chrome.storage.sync.set({ first: 'meow', second: 'wamuw' });

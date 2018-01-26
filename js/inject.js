@@ -88,6 +88,12 @@ function doSave(url) {
   }
 
   /**
+   * Strip :large and _large from twitter filenames
+   */
+  if (url.search(':large'))
+    url = url.replace(':large', '')
+
+  /**
    * Send command for downloading to bg.js
    */
   chrome.runtime.sendMessage({ key: 'download', url: url });
